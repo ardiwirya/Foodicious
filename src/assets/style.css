@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #d6e6ff;
+  background-image: radial-gradient(at 9% 89%, #d6e6ff 0px, transparent 50%),
+    radial-gradient(at 72% 6%, #d7f9f8 0px, transparent 50%),
+    radial-gradient(at 24% 19%, #ffffea 0px, transparent 50%),
+    radial-gradient(at 65% 6%, #fff0d4 0px, transparent 50%),
+    radial-gradient(at 20% 98%, #fbe0e0 0px, transparent 50%),
+    radial-gradient(at 44% 9%, #e5d4ef 0px, transparent 50%),
+    radial-gradient(at 10% 9%, #d6e6ff 0px, transparent 50%);
+  min-height: 100vh;
+}
+
+header {
+  padding: 20px;
+  background-color: #176b87;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#searchElement {
+  padding: 12px;
+  width: 600px;
+  border-radius: 12px;
+  border: 1px solid #d6e6ff;
+  font-size: 16px;
+  outline: none;
+  margin-right: 10px;
+}
+
+#searchButton {
+  background-color: #176b87;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 20%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #abc8e2;
+  color: black;
+}
+
+#searchButton:active {
+  background: rgb(101, 139, 177);
+}
+
+#tips {
+  margin-top: 25px;
+  text-align: center;
+  font-style: italic;
+}
+
+.hide {
+  display: none;
+}
+
+.search-container {
+  padding: 24px 24px 0 24px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.meals-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 30px;
+}
