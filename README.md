@@ -19,6 +19,36 @@ Proyek ini merupakan latihan membangun aplikasi front-end modern dengan tooling 
 
 Menggunakan public API [TheMealDB](https://www.themealdb.com/api.php) untuk menampilkan data resep, bahan, dan detail makanan secara real-time.
 
+## Struktur Proyek
+
+```
+foodicious/
+├── src/
+│   ├── assets/
+│   │   ├── style.css
+│   │   ├── bg.jpg
+│   │   └── Screenshot.png
+│   ├── scripts/
+│   │   ├── components/        # Custom element (Web Components)
+│   │   │   ├── app-header.js
+│   │   │   ├── footer-bar.js
+│   │   │   ├── meal-item.js
+│   │   │   └── search-bar.js
+│   │   ├── data/
+│   │   │   └── data-source.js # Layer pengambilan data dari TheMealDB API
+│   │   ├── view/
+│   │   │   └── main.js        # Logic utama render halaman
+│   │   └── index.js           # Entry point aplikasi
+│   └── index.html
+├── dist/                      # Hasil build production (Webpack)
+├── webpack.common.js
+├── webpack.dev.js
+├── webpack.prod.js
+└── package.json
+```
+
+Setiap elemen UI (header, footer, search bar, kartu resep) dibangun sebagai custom element terpisah di `scripts/components/`, sementara pengambilan data dari API dipisahkan ke `scripts/data/data-source.js` agar logic fetching tidak bercampur dengan logic tampilan.
+
 ## Instalasi & Menjalankan Proyek
 
 1. Install dependencies
