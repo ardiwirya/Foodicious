@@ -1,34 +1,44 @@
 # Foodicious
 
-Submission: Membuat Aplikasi Web dengan ES6, Custom Element, NPM, Module Bundler, dan AJAX.
+Aplikasi katalog resep makanan (*food catalog*), dibuat sebagai submission kelas [Belajar Fundamental Front-End Web Development](https://www.dicoding.com/academies/163) — Dicoding. Submission ini mendapat rating **4/5**.
 
-**Foodicious** _(Food Catalog)_ - Aplikasi katalog resep makanan untuk lulus dari kelas [Belajar Fundamental Front-End Web Development](https://www.dicoding.com/academies/163).
-Rating submission Bintang 4⭐.
-
-## Tampilan Website
+## Preview
 
 ![Screencapture](./src/assets/Screenshot.png)
 
-## Kriteria utama Foodicious:
+## Fokus Teknis
 
-1. Menggunakan standar _EcmaScript6_ dalam menuliskan kode JavaScript.
-2. Terdapat minimal satu penerapan _custom element_.
-3. Menggunakan Webpack sebagai module bundler (tahap production).
-4. Memanfaatkan Webpack sebagai environment dalam pengembangan proyek (tahap development).
-5. Memanfaatkan API dengan menggunakan konsep AJAX dalam menampilkan data yang dinamis pada aplikasi yang dibuat.
+Proyek ini merupakan latihan membangun aplikasi front-end modern dengan tooling standar industri, mencakup:
 
-Public API yang dimanfaatkan dalam pengerjaan submission: [TheMealDB](https://www.themealdb.com/api.php)
+- **JavaScript ES6** — seluruh kode ditulis menggunakan sintaks modern (arrow function, class, destructuring, module, dsb).
+- **Custom Element** — komponen UI dibangun dengan Web Components agar bersifat *reusable* dan *encapsulated*.
+- **Module Bundler (Webpack)** — digunakan baik pada tahap development (dengan dev server) maupun production (build ke berkas statis siap rilis).
+- **AJAX / Fetch API** — data resep diambil secara dinamis dari public API, bukan data statis yang di-hardcode.
 
-## Scripts Menjalankan Aplikasi
+## Sumber Data
 
-1. Install semua package yang dibutuhkan
+Menggunakan public API [TheMealDB](https://www.themealdb.com/api.php) untuk menampilkan data resep, bahan, dan detail makanan secara real-time.
 
-   `npm install`
+## Instalasi & Menjalankan Proyek
 
-2. Build Aplikasi
+1. Install dependencies
 
-   `npm run build`
+   ```bash
+   npm install
+   ```
 
-3. Jalankan aplikasi pada server
+2. Jalankan pada mode development
 
-   `npm run start-dev`
+   ```bash
+   npm run start-dev
+   ```
+
+3. Build untuk production
+
+   ```bash
+   npm run build
+   ```
+
+## Catatan
+
+Karena seluruh data resep bergantung pada TheMealDB API, aplikasi memerlukan koneksi internet aktif agar dapat menampilkan konten dengan benar.
