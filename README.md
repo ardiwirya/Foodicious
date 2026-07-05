@@ -2,6 +2,8 @@
 
 Aplikasi katalog resep makanan (*food catalog*), dibuat sebagai submission kelas [Belajar Fundamental Front-End Web Development](https://www.dicoding.com/academies/163) — Dicoding. Submission ini mendapat rating **4/5**.
 
+**Demo:** [Foodicious](https://foodicious.netlify.app/)
+
 ## Preview
 
 ![Screencapture](./src/assets/Screenshot.png)
