@@ -5,7 +5,7 @@ Aplikasi katalog resep makanan (*food catalog*), dibuat sebagai submission kelas
 **Demo:** [Foodicious](https://foodicious.netlify.app/)
 
 ## Preview
-
+ 
 ![Screencapture](./src/assets/Screenshot.png)
 
 ## Fokus Teknis
